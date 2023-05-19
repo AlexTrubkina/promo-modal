@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+.enroll-warning {
+    color: #721c24;
+    height: 50px;
+    background-color: #f8d7da;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.promo-modal {
+    max-width: 400px;
+    width: calc(350px + (1500 - 250) * ((100vw - 500px) / (1920 - 500)));
+    padding: 30px;
+    box-shadow: -8px -8px 21px rgba(250, 224, 101, 0.5), 0px 4px 65px #795FDE;
+    border-radius: 40px;
+    background-color: white;
+    position: relative;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    margin-inline: 20px;
+    font-size: 0.8rem;
+}
+
+.enroll-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.enroll-success img {
+    width: 200px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.promo-modal-container {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(50, 54, 50, 0.205);
+    z-index: 10;
+
+}
+
+.promo-modal-form-container {
+    text-align: center;
+    font-weight: 300;
+    max-width: 400px;
+}
+
+.profi-close-btn {
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
+    right: -25px;
+    color: #808082;
+    border: 0;
+    background-color: transparent;
+    transition: opacity 0.4s ease;
+}
+
+.promo-modal-close-button:hover {
+    opacity: 0.5;
+}
+
+
+.promo-modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-modal-warning {
+    color: rgba(129, 133, 129, 0.7);
+    font-size: 0.6rem;
+    margin-bottom: 20px;
+}
+
+.promo-modal-input {
+    border: 1px solid #795FDE;
+    border-radius: 20px;
+    padding: 15px;
+    color: #757575;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.promo-modal-input:focus {
+    outline: none;
+}
+
+.promo-modal-form-btn,
+.success-close-btn {
+    background: linear-gradient(90deg, #E1B696 0%, #B66CDA 50.52%, #795FDE 100%);
+    border-radius: 20px;
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    padding-block: 15px;
+    width: 250px;
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+
+    .promo-modal-close-button {
+        right: 10px;
+    }
+
+    .promo-modal-form-btn,
+    .success-close-btn {
+        width: 100%;
+    }
+}
