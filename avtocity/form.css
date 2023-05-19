@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;400;700&display=swap');
+
+.enroll-warning {
+    color: #721c24;
+    height: 50px;
+    background-color: #f8d7da;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.promo-modal {
+    max-width: 500px;
+    padding: 30px;
+    width: calc(400px + (1500 - 250) * ((100vw - 500px) / (1920 - 500)));
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    z-index: 11;
+    margin-inline: 20px;
+    font-size: 0.8rem;
+}
+
+.enroll-success img{
+    width: 200px
+}
+
+.enroll-success h2 {
+    color: #313C6C;
+}
+
+.enroll-success {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: -30px;
+}
+
+.enroll-success img {
+    margin-left: auto;
+}
+
+.enroll-success p {
+    font-weight: 400;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.promo-modal-container {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(50, 54, 50, 0.205);
+    z-index: 10;
+
+}
+
+.promo-modal-close-button {
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
+    right: -25px;
+    color: #808082;
+    border: 0;
+    background-color: transparent;
+    transition: opacity 0.4s ease;
+}
+
+.promo-modal-close-button:hover {
+    opacity: 0.5;
+}
+
+.promo-modal-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+}
+
+.promo-modal-heading h2 {
+    color: #313C6C;
+    font-weight: 600;
+}
+
+
+.promo-modal-heading p {
+    font-size: 0.7rem;
+    color: #4F4F4F;
+    font-weight: 400;
+}
+
+.promo-modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-modal-warning {
+    color: rgba(129, 133, 129, 0.7);
+    font-size: 0.4rem;
+    margin-bottom: 20px;
+}
+
+.promo-modal-input {
+    border: 1px solid #313C6C;
+    border-radius: 6px;
+    padding: 15px;
+    color: #4F4F4F;
+    margin-bottom: 20px;
+}
+
+.promo-modal-input:focus {
+    outline: none;
+}
+
+.promo-modal-form-btn {
+    background: #73CCAF;
+    border-radius: 6px;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    padding-block: 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    .promo-modal-form-container {
+        grid-template-columns: 1fr;
+        gap: 20px
+    }
+
+    .enroll-success {
+        grid-template-columns: 1fr;
+    }
+
+    .enroll-success div {
+        width: 80%;
+    }
+
+    .promo-modal-close-button {
+        top: 3px;
+        right: 5px;
+    }
+}
