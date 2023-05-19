@@ -126,6 +126,7 @@
     padding-block: 15px;
     width: 250px;
     margin-inline: auto;
+    cursor: pointer;
 }
 
 @media (max-width: 500px) {

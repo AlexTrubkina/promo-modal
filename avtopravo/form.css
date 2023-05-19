@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
 .enroll-warning {
     color: #721c24;
@@ -14,29 +14,38 @@
 
 .promo-modal {
     max-width: 500px;
-    width: calc(350px + (1500 - 250) * ((100vw - 500px) / (1920 - 500)));
     padding: 30px;
-    border: 1px solid silver;
-    border-radius: 10px;
+    width: calc(350px + (1500 - 250) * ((100vw - 500px) / (1920 - 500)));
     background-color: white;
     position: relative;
     z-index: 11;
-    display: flex;
-    justify-content: center;
     margin-inline: 20px;
     font-size: 0.8rem;
+    box-shadow: 0px 0px 78px 23px rgba(255, 255, 255, 0.4);
 }
 
 .enroll-success {
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
+
+.enroll-success h3 {
+    margin-top: 30px;
+}
+
+.enroll-success p {
+    margin-top: 10px;
+}
+
 
 .hidden {
     display: none !important;
 }
+
 
 
 .promo-modal-container {
@@ -45,7 +54,7 @@
     position: fixed;
     width: 100vw;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -54,13 +63,7 @@
 
 }
 
-.promo-modal-form-container {
-    text-align: center;
-    font-weight: 300;
-    max-width: 400px;
-}
-
-.avto-club-close-btn {
+.promo-modal-close-button {
     box-sizing: content-box;
     width: 20px;
     height: 20px;
@@ -79,6 +82,7 @@
 }
 
 
+
 .promo-modal-form {
     display: flex;
     flex-direction: column;
@@ -87,46 +91,45 @@
 .promo-modal-warning {
     color: rgba(129, 133, 129, 0.7);
     font-size: 0.6rem;
-    margin-bottom: 20px;
+    
+    text-align: center;
+    margin-top: 20px;
 }
 
 .promo-modal-input {
-    border: 1px solid #757575;
+    box-shadow: inset 0px 0px 4px #C4C4C4;
     border-radius: 4px;
+    border: 0;
     padding: 15px;
-    color: #757575;
+    color: #4F4F4F;
     margin-bottom: 20px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1rem;
 }
 
 .promo-modal-input:focus {
     outline: none;
 }
 
-.promo-modal-form-btn,
-.success-close-btn {
-    background: linear-gradient(92.2deg, #18CA50 1.21%, #15D551 52.83%, #18CA50 98.38%);
-    border-radius: 6px;
+.promo-modal-form-btn {
+    background: #B6281D;
+    border-radius: 4px;
     border: 0;
+    width: 250px;
+    margin-inline: auto;
     color: #fff;
     text-transform: uppercase;
     padding-block: 15px;
-    width: 250px;
-    margin-inline: auto;
     cursor: pointer;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.4));
 }
 
 @media (max-width: 500px) {
 
+    .promo-modal-form-btn {
+        width: 100%;
+    }
+
     .promo-modal-close-button {
         top: 3px;
         right: 5px;
-    }
-
-    .promo-modal-form-btn,
-    .success-close-btn {
-        width: 100%;
     }
 }
