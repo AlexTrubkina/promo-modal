@@ -16,7 +16,7 @@
     max-width: 400px;
     width: calc(400px + (1500 - 250) * ((100vw - 500px) / (1920 - 500)));
     padding: 30px;
-    box-shadow: -8px -8px 21px rgba(250, 224, 101, 0.5), 0px 4px 65px #795FDE;
+    box-shadow: 0px 4px 4px #A57FB2, 0px 4px 65px #795FDE;
     border-radius: 40px;
     background-color: white;
     position: relative;
@@ -36,7 +36,7 @@
 }
 
 .enroll-success img {
-    width: 200px;
+    width: 100px;
 }
 
 .hidden {
@@ -65,7 +65,7 @@
     max-width: 400px;
 }
 
-.profi-close-btn {
+.avtobot-close-btn {
     box-sizing: content-box;
     width: 20px;
     height: 20px;
@@ -97,7 +97,7 @@
 
 .promo-modal-input {
     border: 1px solid #795FDE;
-    border-radius: 20px;
+    border-radius: 60px;
     padding: 15px;
     color: #757575;
     margin-bottom: 20px;
@@ -111,11 +111,11 @@
 
 .promo-modal-form-btn,
 .success-close-btn {
-    background: linear-gradient(90deg, #E1B696 0%, #B66CDA 50.52%, #795FDE 100%);
-    border-radius: 20px;
+    background: #3C2F71;
+    border-radius: 60px;
     border: 0;
+    text-transform: uppercase;
     color: #fff;
-    font-weight: 700;
     padding-block: 15px;
     width: 250px;
     margin-inline: auto;
