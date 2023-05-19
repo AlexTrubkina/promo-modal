@@ -15,6 +15,7 @@
 .promo-modal {
     max-width: 500px;
     padding: 30px;
+    width: calc(350px + (1500 - 250) * ((100vw - 500px) / (1920 - 500)));
     background-color: white;
     position: relative;
     z-index: 11;
