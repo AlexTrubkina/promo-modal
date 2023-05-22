@@ -76,7 +76,7 @@
     transition: opacity 0.4s ease;
 }
 
-.promo-modal-close-button:hover {
+.promo-modal-close-btn-style:hover {
     opacity: 0.5;
 }
 
@@ -133,6 +133,13 @@
     text-transform: uppercase;
     padding-block: 15px;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.promo-modal-form-btn:hover,
+.promo-modal-close-button-success:hover {
+    background-color: #ffc219;
+    color: #000;
 }
 
 @media (max-width: 500px) {
