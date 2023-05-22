@@ -130,6 +130,11 @@
     font-weight: 700;
     padding-block: 15px;
     cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.promo-modal-form-btn:hover {
+    color: #fff;
 }
 
 @media (max-width: 500px) {
