@@ -135,7 +135,17 @@
     text-transform: uppercase;
     padding-block: 20px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.promo-modal-form-btn:hover {
+    box-shadow: 3px -2px 0 0 #18830e, 5px 5px 12px #2fca1f;
+}
+
+.promo-modal-form-btn:active {
+    box-shadow: none;
+}
+
 
 @media (max-width: 500px) {
 
