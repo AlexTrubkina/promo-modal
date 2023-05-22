@@ -81,12 +81,9 @@
     transition: opacity 0.4s ease;
 }
 
-.promo-modal-close-button:hover {
+.close-btn-position:hover {
     opacity: 0.5;
 }
-
-
-
 
 .promo-modal-form {
     display: grid;
@@ -127,6 +124,13 @@
     text-transform: uppercase;
     padding-block: 15px;
     cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.promo-modal-form-btn:hover,
+.orange-close-btn:hover {
+    background-color: #ffc219;
+    color: #000;
 }
 
 @media (max-width: 700px) {
