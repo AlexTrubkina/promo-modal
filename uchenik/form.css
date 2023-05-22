@@ -124,6 +124,10 @@
     font-size: 1.1rem;
 }
 
+.promo-modal-form-btn:hover {
+    background-color: #b5b5b5;
+}
+
 
 @media (max-width: 500px) {
 
