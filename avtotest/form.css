@@ -142,6 +142,31 @@
     text-transform: uppercase;
     padding-block: 20px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.promo-modal-form-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.promo-modal-form-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F6E183;
+    clip-path: circle(0 at left center);
+    transition: 0.4s linear;
+}
+
+.promo-modal-form-btn:hover::before {
+    clip-path: circle(300px at left center);
+    opacity: 0.3;
 }
 
 @media (max-width: 500px) {
