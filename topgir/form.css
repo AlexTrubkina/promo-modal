@@ -106,6 +106,12 @@
     font-size: 1.2rem;
     border: 0;
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+.promo-modal-form-btn:hover {
+    box-shadow: 0 0 20px #fc7101;
+    transform: scale(1.05);
 }
 
 .promo-modal-warning {
