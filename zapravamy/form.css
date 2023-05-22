@@ -111,11 +111,17 @@
 
 .promo-modal-form-btn {
     background: #67AD5B;
-    border: 0;
+    border: 2px solid #67AD5B;
     color: #fff;
     text-transform: uppercase;
     padding-block: 15px;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.promo-modal-form-btn:hover {
+    background-color: #fff;
+    color: #67AD5B;
 }
 
 @media (max-width: 500px) {
