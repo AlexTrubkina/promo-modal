@@ -103,6 +103,12 @@
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.promo-modal-form-btn:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 .promo-modal-warning {
