@@ -137,6 +137,12 @@
     padding-block: 15px;
     box-shadow: inset 6px 5px 7px #9A77E0, inset -7px -6px 4px #583E8C;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.promo-modal-form-btn:hover {
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,.5);
+    background-color: #32373c;
 }
 
 @media (max-width: 500px) {
