@@ -115,6 +115,11 @@
     padding-block: 15px;
     cursor: pointer;
     margin-inline: auto;
+    transition: background-color 0.5s ease;
+}
+
+.promo-modal-form-btn:hover {
+    background-color: #f7f7f7;
 }
 
 @media (max-width: 500px) {
