@@ -100,7 +100,7 @@ const getInputNumbersValue = (input) => {
 };
 
 const onPhoneInput = (e) => {
-    console.log("hi");
+    
     let input = e.target,
         inputNumbersValue = getInputNumbersValue(input),
         selectionStart = input.selectionStart,
