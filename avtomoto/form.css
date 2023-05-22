@@ -109,6 +109,12 @@
     text-transform: uppercase;
     padding-block: 15px;
     cursor: pointer;
+    transition: box-shadow 0.05s;
+}
+
+.promo-modal-form-btn:hover,
+.promo-modal-close-button-success:hover {
+    box-shadow: 0 0 30px rgba(213,4,5,.93);
 }
 
 .enroll-success {
