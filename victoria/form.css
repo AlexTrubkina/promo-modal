@@ -65,7 +65,7 @@
     max-width: 400px;
 }
 
-.avto-club-close-btn {
+.viktoria-close-btn {
     box-sizing: content-box;
     width: 20px;
     height: 20px;
@@ -79,7 +79,7 @@
     transition: opacity 0.4s ease;
 }
 
-.promo-modal-close-button:hover {
+.viktoria-close-btn:hover {
     opacity: 0.5;
 }
 
@@ -127,6 +127,12 @@
     width: 250px;
     margin-inline: auto;
     cursor: pointer;
+    transition: background-color .5s ease 0s;
+}
+
+.promo-modal-form-btn:hover,
+.success-close-btn:hover {
+    background-color: #ef4545;
 }
 
 @media (max-width: 500px) {
