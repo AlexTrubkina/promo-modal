@@ -12,14 +12,25 @@ let deltaTime;
 
 window.addEventListener("DOMContentLoaded", (e) => {
 
+    function hideBodyScroll() {
+        if ((!('ontouchstart' in window) ||
+            (navigator.maxTouchPoints === 0) ||
+            (navigator.msMaxTouchPoints === 0)) && document.body.scrollHeight > window.innerHeight) {
+            document.body.classList.add("hide-body-scroll");
+        }
+
+    }
+
     function showPromoModalOnceDay() {
         let visitDate = new Date().toISOString();
         deltaTime = Math.abs(new Date(localStorage.getItem("whenPromoModalWasShown")) - new Date(visitDate))
         if (!localStorage.getItem("whenPromoModalWasShown")) {
             promoModalContainer.classList.remove("hidden");
+            hideBodyScroll();
             localStorage.setItem("whenPromoModalWasShown", new Date().toISOString());
         } else if (deltaTime > 86400000) {
             promoModalContainer.classList.remove("hidden");
+            hideBodyScroll();
             localStorage.setItem("whenPromoModalWasShown", new Date().toISOString());
         }
     }
@@ -28,6 +39,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
         promoModalContainer.classList.add("hidden");
         promoModalFormContainer.classList.remove("hidden");
         successMessage.classList.add("hidden");
+        document.body.classList.remove("hide-body-scroll");
     }
 
     setTimeout(showPromoModalOnceDay, 10000)
@@ -55,6 +67,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
     promoModalButtons.forEach((button) => {
         button.addEventListener("click", () => {
             promoModalContainer.classList.remove("hidden");
+            hideBodyScroll();
         })
     })
 });
